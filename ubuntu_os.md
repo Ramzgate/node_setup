@@ -83,7 +83,7 @@ graph LR
   D --> E[USD]
   A --> F[FTT/FTX]
   F --> G[ETH/FTX]
-  G --> |color:red| H[ETH/CB]
+  G --> |FTX/CB| H[ETH/CB]
   H --> E
   F --> I[USDT/FTX]
   I --> E
