@@ -60,19 +60,17 @@ Instructions for setting up Beelink SEi, mini-PC desktop with Windows 10/11 into
     - verify mounting with `sudo lsblk -f`
 
 
-```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
-what next?
 
 ```mermaid
-graph LR;
-    B-->A;
-    A-->C;
-    B-->D;
-    D-->C;
+graph TD
+  A[Start] --> B[Process 1]
+  B --> C[Process 2]
+  C --> D[Decision]
+  D -- Yes --> E[Process 3]
+  D -- No --> F[Process 4]
+  E --> G[End 1]
+  F --> G[End 2]
+  B --> H[Process 5]
+  H --> I[Process 6]
+  I --> G[End 3]
 ```
