@@ -81,11 +81,10 @@ graph LR
   B --> C[USDT/BNB]
   C --> D[USDT/CB]
   D --> E[USD]
-  A --> E[FTT/FTX]
-  E --> F[ETH/FTX]
-  F --> G[ETH/CB]
-  G --> E
-  E --> H[USDT/FTX]
-  H --> F
+  A --> F[FTT/FTX]
+  F --> G[ETH/FTX]
+  G --> H[ETH/CB]
   H --> E
+  F --> I[USDT/FTX]
+  I --> E
 ```
