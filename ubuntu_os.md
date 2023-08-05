@@ -1,9 +1,17 @@
 # Ubuntu mini-PC
 
-1. Hardware
 <img align="center" src="SEi_mini-PC.jpg" alt="mini-PC" width="800" height="600">
 
-    - Beelink, SEi Series
+1. Hardware
+    | model | Beelink New 8th Generation | 
+    | processor    | Intel 4 Cores 8 Threads i5-8259U Processor(up to 3.8GHz) |
+    | RAM | 16G DDR4 RAM |
+    | HD | 500GB NVMe M.2 SSD |
+    | display | 4K Dual HDMI Display |
+    | WiFi  | WiFi5,BT5.0 | 
+    | connectors | 4*USB 3.0 | 
+
+
 
 1. Download the Ubuntu ISO File:
     - Download the latest version of Ubuntu to your laptop from the official Ubuntu [website](https://ubuntu.com/download).
