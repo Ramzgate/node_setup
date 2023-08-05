@@ -53,9 +53,11 @@ Instructions for setting up Beelink SEi, mini-PC desktop with Windows 10/11 into
 ```sh
 sudo lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL
 ```
+```
 
     to find SSD and mounting point (usually SSD appears as 'sda', 'sdb', 'sdc')
     - fff
+
 
 ```mermaid
 graph TD;
