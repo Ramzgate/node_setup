@@ -1,7 +1,5 @@
 # Ubuntu mini-PC
 
-<img align="center" src="SEi_mini-PC.jpg" alt="mini-PC" width="800" height="600">
-
 1. Hardware
 
     |  |  |
@@ -14,20 +12,25 @@
     | WiFi  | WiFi5,BT5.0 | 
     | connectors | 4*USB 3.0 | 
 
-
+2. Upgrades 
+    - Samsung 870 EVO, 2TB SSD
+        - open mini-pc
+        - find docking and insert SSD
+        - Note the SSD needs to be mounted once Ubuntu is installed
 
 1. Download the Ubuntu ISO File:
-    - Download the latest version of Ubuntu to your laptop from the official Ubuntu [website](https://ubuntu.com/download).
-    - Make sure to select the appropriate version (e.g., 64-bit or 32-bit) based on your system's architecture.
+    - Download the latest version of Ubuntu to laptop (MacBookPro) from the official Ubuntu [website](https://ubuntu.com/download).
+        - Make select 64-bit system
+
 2. Create a Bootable USB Drive:
-    - Insert your USB flash drive into an available USB port on your computer.
-        - Note that all data on the USB drive will be erased during this process, so back up any important files.
-    - Download and install a USB drive bootable creation tool like [__Etcher__](https://www.balena.io/etcher/) or [Rufus](https://rufus.ie/).
-    - Open the bootable creation tool, select the Ubuntu ISO file you downloaded in Step 1, and choose the USB drive you want to use for the installation.
-    - Click the "_Start_" or "_Create_" button to begin creating the bootable USB drive.
+    - Insert USB flash drive into USB port on laptop
+        - Preinstalled Window 10/11 will be erased during this process
+    - Download and install on laptop [__Etcher__](https://www.balena.io/etcher/) a USB drive bootable creation tool ([Rufus](https://rufus.ie/) an alternative)
+    - Open the bootable creation tool, select the downloaded Ubuntu ISO file from Step 1, and choose the USB drive you want to use for the installation
+    - Click the "_Start_" or "_Create_" button to begin creating the bootable USB drive
 
 3. Set Up the BIOS/UEFI:
-    - Restart your computer and access the BIOS/UEFI settings. The method to do this can be pressing __Delete__, or __ESC__, F2, F12 during startup.
+    - Restart your computer and access the BIOS/UEFI settings by pressing __ESC__ (could also use __Delete__, F2, F12 ) during startup.
     - In the BIOS/UEFI settings, change the boot order to prioritize the USB drive. 
         - This will ensure that the computer boots from the USB drive during startup.
 
