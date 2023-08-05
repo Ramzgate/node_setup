@@ -6,7 +6,7 @@ Instructions for setting up Beelink SEi, mini-PC desktop with Windows 10/11 into
 
     |  |  |
     |------------|---------------|
-    |  | Beelink New 8th Generation | 
+    | manufacture | Beelink New 8th Generation | 
     | processor    | Intel 4 Cores 8 Threads i5-8259U Processor(up to 3.8GHz) |
     | RAM | 16G DDR4 RAM |
     | HD | 500GB NVMe M.2 SSD |
@@ -49,6 +49,6 @@ Instructions for setting up Beelink SEi, mini-PC desktop with Windows 10/11 into
 
 6. Mounting SSD hard disk:
     - Boot up Ubuntu and open a cl (command line) terminal
-    - Use *```sudo lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL```*\
+    - Use *```bash sudo lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL```*\
         to find SSD and mounting point (usually SSD appears as 'sda', 'sdb', 'sdc')
     - scs
