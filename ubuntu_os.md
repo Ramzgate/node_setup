@@ -67,8 +67,8 @@ what next?
 
 ```mermaid
 graph TD;
-    B-->C;
-    A-->B;
-    A-->D;
+    B-->A;
+    A-->C;
+    B-->D;
     D-->C;
 ```
