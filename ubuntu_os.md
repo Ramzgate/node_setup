@@ -49,6 +49,9 @@ Instructions for setting up Beelink SEi, mini-PC desktop with Windows 10/11 into
 
 6. Mounting SSD hard disk:
     - Boot up Ubuntu and open a cl (command line) terminal
-    - Use *```bash sudo lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL```*\
+    - Use 
+    ```bash 
+    sudo lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL```
         to find SSD and mounting point (usually SSD appears as 'sda', 'sdb', 'sdc')
     - scs
+
