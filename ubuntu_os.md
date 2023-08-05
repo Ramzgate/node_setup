@@ -1,4 +1,9 @@
-# Installing Ubuntu OS
+# Ubuntu mini-PC
+
+1. Hardware
+
+    ![mini-PC](SEi_mini-PC.jpg)
+   
 
 1. Download the Ubuntu ISO File:
     - Download the latest version of Ubuntu to your laptop from the official Ubuntu [website](https://ubuntu.com/download).
