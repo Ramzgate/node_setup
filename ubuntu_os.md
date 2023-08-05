@@ -18,7 +18,7 @@ Instructions for setting up Beelink SEi, mini-PC desktop with Windows 10/11 into
     - Samsung 870 EVO, 2TB SSD
         - open mini-pc
         - find docking and insert SSD
-        - Note the SSD needs to be mounted once Ubuntu is installed
+> Note the SSD needs to be mounted once Ubuntu is installed
 
 1. __Download Ubuntu ISO File__:
     - Download the latest version of Ubuntu to laptop (MacBookPro) from the official Ubuntu [website](https://ubuntu.com/download).
@@ -57,7 +57,7 @@ Instructions for setting up Beelink SEi, mini-PC desktop with Windows 10/11 into
     ```
     UUID=<UUID #> /mnt/ssd ext4 defaults,nofail 0 2
     ```
-    - verify mounting 
+    - verify mounting with `sudo lsblk -f`
 
 
 ```mermaid
