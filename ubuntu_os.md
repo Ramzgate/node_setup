@@ -76,7 +76,7 @@ graph LR
 ```
 
 ```mermaid
-graph LR
+graph TD
   A[FTT] --> B[FTT/BNB]
   B --> C[USDT/BNB]
   C -->|BNB/CB| D[USDT/CB]
