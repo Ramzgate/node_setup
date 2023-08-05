@@ -1,14 +1,12 @@
 # Installing Ubuntu OS
 
-To install Ubuntu via a flash drive, you'll need to create a bootable USB drive with the Ubuntu ISO file. Here's a step-by-step guide on how to do it:
-
-Download the Ubuntu ISO File:
-
-1. Go to the official [Ubuntu website](https://ubuntu.com/download) and download the latest version of Ubuntu.
+1. Download the Ubuntu ISO File:
+    - Download the latest version of Ubuntu to your laptop from the official [Ubuntu website](https://ubuntu.com/download).
     - Make sure to select the appropriate version (e.g., 64-bit or 32-bit) based on your system's architecture.
 2. Create a Bootable USB Drive:
-    - Insert your USB flash drive into an available USB port on your computer. Note that all data on the USB drive will be erased during this process, so back up any important files.
-    - Download and install a USB drive bootable creation tool like Rufus (https://rufus.ie/) or Etcher (https://www.balena.io/etcher/).
+    - Insert your USB flash drive into an available USB port on your computer.
+        - Note that all data on the USB drive will be erased during this process, so back up any important files.
+    - Download and install a USB drive bootable creation tool like [__Etcher__](https://www.balena.io/etcher/) or [Rufus](https://rufus.ie/).
     - Open the bootable creation tool, select the Ubuntu ISO file you downloaded in Step 1, and choose the USB drive you want to use for the installation.
     - Click the "Start" or "Create" button to begin creating the bootable USB drive.
 
