@@ -49,9 +49,11 @@ Instructions for setting up Beelink SEi, mini-PC desktop with Windows 10/11 into
 
 6. Mounting SSD hard disk:
     - Boot up Ubuntu and open a cl (command line) terminal
-    - Use   `sudo lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL`\
-    to find SSD and mounting point (usually SSD appears as 'sda', 'sdb', 'sdc')
-    - fff
+    - Use  `sudo lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL` to find SSD and mounting point (usually SSD appears as 'sda', 'sdb', 'sdc')
+    - For a one time mount:
+        - creat directory for mounting point `mkdir /mnt/ssd`
+        - mount SSD `sudo mount /dev/sda /mnt/ssd`
+    - For a fixed mounting when terminal is opened  edit `/etc/fstab` 
 
 
 ```mermaid
@@ -62,3 +64,11 @@ graph TD;
     C-->D;
 ```
 what next?
+
+```mermaid
+graph TD;
+    B-->C;
+    A-->B;
+    A-->D;
+    D-->C;
+```
