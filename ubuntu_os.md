@@ -53,7 +53,13 @@ Instructions for setting up Beelink SEi, mini-PC desktop with Windows 10/11 into
     - For a one time mount:
         - creat directory for mounting point `mkdir /mnt/ssd`
         - mount SSD `sudo mount /dev/sda /mnt/ssd`
-    - For a fixed mounting when terminal is opened  edit `/etc/fstab` 
+    - For a fixed mounting when terminal is opened
+    - use `blkid` to find UUID
+    - edit `/etc/fstab` and add a new line at eof
+    ```
+    UUID=<UUID #> /mnt/ssd ext4 defaults,nofail 0 2
+    ```
+    - verify mounting 
 
 
 ```mermaid
@@ -66,7 +72,7 @@ graph TD;
 what next?
 
 ```mermaid
-graph TD;
+graph LR;
     B-->A;
     A-->C;
     B-->D;
