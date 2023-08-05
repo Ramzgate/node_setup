@@ -4,6 +4,7 @@
 
 1. Hardware
 
+    |  |  |
     |------------|---------------|
     |  | Beelink New 8th Generation | 
     | processor    | Intel 4 Cores 8 Threads i5-8259U Processor(up to 3.8GHz) |
