@@ -74,3 +74,17 @@ graph LR
   H --> I[Process 6]
   I --> G[End 3]
 ```
+
+```mermaid
+graph LR
+  A[FTT] -- BNB --> B[USDT]
+  B -- BNB --> C[ETH]
+  C -- CB --> D[USD]
+  A -- BNB --> E[ETH]
+  E -- CB --> D
+  A -- FTX --> F[USDT]
+  F -- FTX --> B
+  A -- CB --> H[BTC]
+  H -- CB --> D
+  F --> D
+```
