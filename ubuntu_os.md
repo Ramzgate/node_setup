@@ -77,14 +77,15 @@ graph LR
 
 ```mermaid
 graph LR
-  A[FTT] -- BNB --> B[USDT]
-  B -- BNB --> C[ETH]
-  C -- CB --> D[USD]
-  A -- BNB --> E[ETH]
-  E -- CB --> D
-  A -- FTX --> F[USDT]
-  F -- FTX --> B
-  A -- CB --> H[BTC]
-  H -- CB --> D
-  F --> D
+  A[FTT] --> B[FTT/BNB]
+  B --> C[USDT/BNB]
+  C --> D[USDT/CB]
+  D --> E[USD]
+  A --> E[FTT/FTX]
+  E --> F[ETH/FTX]
+  F --> G[ETH/CB]
+  G --> E
+  E -- H[USDT/FTX]
+  H --> F
+  H --> E
 ```
