@@ -80,11 +80,11 @@ graph LR
   A[FTT] --> B[FTT/BNB]
   B --> C[USDT/BNB]
   C -->|BNB/CB| D[USDT/CB]
-  D -->|off ramp| E[USD]
+  D -->|ramp| E[USD]
   A --> F[FTT/FTX]
   F --> G[ETH/FTX]
   G --> |FTX/CB| H[ETH/CB]
-  H -->|off ramp| E
+  H -->|ramp| E
   F --> I[USDT/FTX]
-  I -->|off ramp| E
+  I -->|ramp| E
 ```
