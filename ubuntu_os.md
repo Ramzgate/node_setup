@@ -24,5 +24,4 @@
     - Wait for the installation to complete. Once done, restart your computer.
 
 5. Boot into Ubuntu:
-    - After restarting your computer, you'll see a boot menu where you can choose between Ubuntu and Windows. Use the arrow keys to select Ubuntu and press Enter.
     - Ubuntu will now boot up, and you can start using your newly installed Ubuntu operating system.
