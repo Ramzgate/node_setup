@@ -47,4 +47,8 @@ Instructions for setting up Beelink SEi, mini-PC desktop with Windows 10/11 into
 5. Boot into Ubuntu:
     - Ubuntu will now boot up, and you can start using your newly installed Ubuntu operating system.
 
-6. Mounting SSD hard disk: 
+6. Mounting SSD hard disk:
+    - boot up Ubuntu and open a cl (command line) terminal
+    - Find SSD (usually 'sda', 'sdb', 'sdc') and mounting point if mounted with 
+    `sudo lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL` 
+    
