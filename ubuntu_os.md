@@ -1,5 +1,7 @@
 # Ubuntu mini-PC
 
+Instructions for setting up Beelink SEi, mini-PC desktop with Windows 10/11 into a Ubuntu box with a 2T SSD hard disk. 
+
 1. Hardware
 
     |  |  |
@@ -44,3 +46,5 @@
 
 5. Boot into Ubuntu:
     - Ubuntu will now boot up, and you can start using your newly installed Ubuntu operating system.
+
+6. Mounting SDD hard disk: 
