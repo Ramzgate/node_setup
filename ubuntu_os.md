@@ -4,7 +4,7 @@
 
     ![mini-PC](SEi_mini-PC.jpg)
    
-<img src="SEi_mini-PC.jpg" alt="mini-PC" width="800" height="600">
+<img align="center" src="SEi_mini-PC.jpg" alt="mini-PC" width="800" height="600">
 
 1. Download the Ubuntu ISO File:
     - Download the latest version of Ubuntu to your laptop from the official Ubuntu [website](https://ubuntu.com/download).
