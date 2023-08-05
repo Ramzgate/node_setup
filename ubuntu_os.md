@@ -62,7 +62,7 @@ Instructions for setting up Beelink SEi, mini-PC desktop with Windows 10/11 into
 
 
 ```mermaid
-graph TD
+graph LR
   A[Start] --> B[Process 1]
   B --> C[Process 2]
   C --> D[Decision]
