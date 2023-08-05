@@ -79,11 +79,11 @@ graph LR
 graph LR
   A[FTT] --> B[FTT/BNB]
   B --> C[USDT/BNB]
-  C -- |color:red| --> D[USDT/CB]
+  C -->|color:red| D[USDT/CB]
   D --> E[USD]
   A --> F[FTT/FTX]
   F --> G[ETH/FTX]
-  G -->|red| H[ETH/CB]
+  G --> |red| H[ETH/CB]
   H --> E
   F --> I[USDT/FTX]
   I --> E
