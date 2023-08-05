@@ -77,7 +77,7 @@ graph LR
 
 ```mermaid
 graph LR
-  A[FTT] --> B[FTT/BNB]
+  A[FTT/Wallet] --> B[FTT/BNB]
   B --> C[USDT/BNB]
   C -->|BNB/CB| D[USDT/CB]
   D -->|ramp| E[USD]
