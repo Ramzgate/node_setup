@@ -3,9 +3,8 @@
 <img align="center" src="SEi_mini-PC.jpg" alt="mini-PC" width="800" height="600">
 
 1. Hardware
-    | Spec | |
     |------------|---------------|
-    | model | Beelink New 8th Generation | 
+    |  | Beelink New 8th Generation | 
     | processor    | Intel 4 Cores 8 Threads i5-8259U Processor(up to 3.8GHz) |
     | RAM | 16G DDR4 RAM |
     | HD | 500GB NVMe M.2 SSD |
