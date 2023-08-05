@@ -63,20 +63,6 @@ Instructions for setting up Beelink SEi, mini-PC desktop with Windows 10/11 into
 
 ```mermaid
 graph LR
-  A[Start] --> B[Process 1]
-  B --> C[Process 2]
-  C --> D[Decision]
-  D -- Yes --> E[Process 3]
-  D -- No --> F[Process 4]
-  E --> G[End 1]
-  F --> G[End 2]
-  B --> H[Process 5]
-  H --> I[Process 6]
-  I --> G[End 3]
-```
-
-```mermaid
-graph LR
   A[FTT/Wallet] --> B[FTT/BNB]
   B --> C[USDT/BNB]
   C -->|BNB/CB| D[USDT/CB]
