@@ -3,6 +3,7 @@
 <img align="center" src="SEi_mini-PC.jpg" alt="mini-PC" width="800" height="600">
 
 1. Hardware
+
     |------------|---------------|
     |  | Beelink New 8th Generation | 
     | processor    | Intel 4 Cores 8 Threads i5-8259U Processor(up to 3.8GHz) |
