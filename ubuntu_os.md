@@ -76,15 +76,15 @@ graph LR
 ```
 
 ```mermaid
-graph TD
+graph LR
   A[FTT] --> B[FTT/BNB]
   B --> C[USDT/BNB]
   C -->|BNB/CB| D[USDT/CB]
-  D --> E[USD]
+  D -->|off ramp| E[USD]
   A --> F[FTT/FTX]
   F --> G[ETH/FTX]
   G --> |FTX/CB| H[ETH/CB]
-  H --> E
+  H -->|off ramp| E
   F --> I[USDT/FTX]
-  I --> E
+  I -->|off ramp| E
 ```
