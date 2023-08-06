@@ -71,6 +71,11 @@ For instructions on seting up a miniPC machine see [setup](https://github.com/Ra
     - `--http`: to expose an HTTP server of the beacon chain. The default listening address is `http://localhost:5052`
         - The HTTP API is required for the beacon node to accept connections from the validator client, which manages keys
 
+4. Example
+```
+lighthouse bn --network sepolia --execution-endpoint http://localhost:8551 --execution-jwt $JWT_SECRET_PATH --checkpoint-sync-url https://sepolia.checkpoint-sync.ethpandaops.io --disable-deposit-contract-sync --http
+```
+
 ## go-ethereum setup
 
 
