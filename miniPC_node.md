@@ -15,7 +15,7 @@ For instructions on seting up a miniPC machine see [setup](https://github.com/Ra
 
 ## lighthouse setup
 
-__Installing lighthouse client__:
+__Installing a lighthouse client__:
 
 1. Instructions [source](https://lighthouse-book.sigmaprime.io/installation-source.html)
 2. Install Rust using rustup：
@@ -33,9 +33,28 @@ __Installing lighthouse client__:
     - `git checkout stable`
     - `make`
 
+__Running a lighthouse client__:
+
+1. Create a JWT secret file
+    - A JWT secret file is used to secure the communication between the execution client and the consensus client
+    - create a JWT secret file which will be used in later steps
+        - `sudo mkdir -p /secrets`
+        - `openssl rand -hex 32 | tr -d "\n" | sudo tee /secrets/jwt.hex`
+2. Non-staking
+```
+lighthouse bn \
+  --network mainnet \
+  --execution-endpoint http://localhost:8551 \
+  --execution-jwt /secrets/jwt.hex \
+  --checkpoint-sync-url https://mainnet.checkpoint.sigp.io \
+  --disable-deposit-contract-sync
+  ```
+
+
 ## go-ethereum setup
 
 
 ## clef setup
 
 ## Launching a Node
+
