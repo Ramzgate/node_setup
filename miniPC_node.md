@@ -40,7 +40,10 @@ __Running a lighthouse client__:
     - create a JWT secret file which will be used in later steps
         - `sudo mkdir -p /secrets`
         - `openssl rand -hex 32 | tr -d "\n" | sudo tee /secrets/jwt.hex`
-2. Non-staking
+2. Step 3: Set up a beacon node using Lighthouse
+
+Use the following command to start a non-staking beacon nod:
+
 ```
 lighthouse bn \
   --network mainnet \
