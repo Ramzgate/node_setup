@@ -76,13 +76,18 @@ Instructions for setting up Beelink SEi, mini-PC desktop with Windows 10/11 into
     - For a one time mount:
         - creat directory for mounting point `mkdir /mnt/ssd`
         - mount SSD `sudo mount /dev/sda /mnt/ssd`
-    - For a mounting upon opening terminal:
+        - for any change in mounting point 
+            - to unmount `sudo umount /mnt/ssd`
+            - mount in new position
+    - For mounting upon opening terminal:
     - use `blkid` to find UUID
     - edit `/etc/fstab` and add a new line at eof
     ```
     UUID=<UUID #> /mnt/ssd ext4 defaults,nofail 0 2
     ```
     - verify mounting with `sudo lsblk -f`
+    - if necessary, change ownership `sudo chown -R <usr> <directory>`
+        - `sudo chown -R eyal /home/eyal/mydir/mymnt`
 
 10. __Installing Anaconda__: ([source](https://www.makeuseof.com/install-anaconda-on-ubuntu/))
     -  Update Linux system repositories: `sudo apt-get update`
