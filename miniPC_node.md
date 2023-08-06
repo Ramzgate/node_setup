@@ -1,6 +1,5 @@
 # Setting up ETH node on a Beelink SEi mini-PC
 
-We assume the miniPC is setup with Ubuntu Linux, and has a SSD installed and mounted. For instructions on setingup a miniPC machine see [setup]()
 
 ### Node Structure
 
@@ -10,4 +9,6 @@ We assume the miniPC is setup with Ubuntu Linux, and has a SSD installed and mou
 |  OS              |   Ubuntu     |
 | consensus client |  Lighthouse |
 | Execution client | go-ethereum |
+
+For instructions on seting up a miniPC machine see [setup](https://github.com/Ramzgate/node_setup/blob/main/miniPC_machine.md)
 
