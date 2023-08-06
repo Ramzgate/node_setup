@@ -42,16 +42,16 @@ __Running a lighthouse client__:
         - `openssl rand -hex 32 | tr -d "\n" | sudo tee /secrets/jwt.hex`
 2. Step 3: Set up a beacon node using Lighthouse
 
-Use the following command to start a non-staking beacon nod:
+    Use the following command to start a non-staking beacon nod:
 
-```
-lighthouse bn \
-  --network mainnet \
-  --execution-endpoint http://localhost:8551 \
-  --execution-jwt /secrets/jwt.hex \
-  --checkpoint-sync-url https://mainnet.checkpoint.sigp.io \
-  --disable-deposit-contract-sync
-  ```
+    ```
+    lighthouse bn \
+    --network mainnet \
+    --execution-endpoint http://localhost:8551 \
+    --execution-jwt /secrets/jwt.hex \
+    --checkpoint-sync-url https://mainnet.checkpoint.sigp.io \
+    --disable-deposit-contract-sync
+    ```
 
 
 ## go-ethereum setup
