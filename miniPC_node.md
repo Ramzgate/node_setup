@@ -62,7 +62,7 @@ __Running a lighthouse client__:
         - `lighthouse --network sepolia`: Sepolia (testnet)
         - `lighthouse --network gnosis`: Gnosis chain
 
-            >Note: Using the correct --network flag is very important; using the wrong flag can result in penalties, slashings or lost deposits. As a rule of thumb, always provide a --network flag instead of relying on the default
+            >_Note: Using the correct --network flag is very important; using the wrong flag can result in penalties, slashings or lost deposits. As a rule of thumb, always provide a --network flag instead of relying on the default_
 
     - `--execution-endpoint`: the URL of the execution engine API
         - If the execution engine is running on the same computer with the default port, this will be `http://localhost:8551`
