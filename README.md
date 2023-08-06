@@ -1,4 +1,4 @@
-# Setting up an Ethereum Blockchain Node
+# Setting up Ethereum Blockchain nodes
 
 1. [mini-PC Ubuntu](https://github.com/Ramzgate/node_setup/blob/main/ubuntu_node.md) node
     - setting up [mini-PC Ubuntu](https://github.com/Ramzgate/node_setup/blob/main/ubuntu_machine.md) machine
