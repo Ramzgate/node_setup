@@ -88,6 +88,7 @@ Instructions for setting up Beelink SEi, mini-PC desktop with Windows 10/11 into
     - verify mounting with `sudo lsblk -f`
     - if necessary, change ownership `sudo chown -R <usr> <directory>`
         - `sudo chown -R eyal /home/eyal/mydir/mymnt`
+        - look [here](https://devconnected.com/how-to-chown-recursive-on-linux/) for further details
 
 10. __Installing Anaconda__: ([source](https://www.makeuseof.com/install-anaconda-on-ubuntu/))
     -  Update Linux system repositories: `sudo apt-get update`
