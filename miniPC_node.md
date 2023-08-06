@@ -35,13 +35,13 @@ __Installing a lighthouse client__:
 
 __Running a lighthouse client__:
 
-1. Create a JWT secret file
+1. __Create a JWT secret file__
     - A JWT secret file is used to secure the communication between the execution client and the consensus client
     - create a JWT secret file which will be used in later steps
         - `sudo mkdir -p /secrets`
         - `openssl rand -hex 32 | tr -d "\n" | sudo tee /secrets/jwt.hex`
 
-2. Launch a beacon node using Lighthouse
+2. __Launch a beacon node using Lighthouse__
 
     Use the following command to start a non-staking beacon nod:
 
@@ -54,7 +54,7 @@ __Running a lighthouse client__:
     --disable-deposit-contract-sync
     ```
 
-3. Notable flags:
+3. __Notable flags__:
     - `--network`: selects network:
         - `lighthouse` (no flag): Mainnet
         - `lighthouse --network mainnet`: Mainnet
