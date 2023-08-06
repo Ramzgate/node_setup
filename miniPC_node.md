@@ -78,7 +78,11 @@ lighthouse bn --network sepolia --execution-endpoint http://localhost:8551 --exe
 
 ## go-ethereum setup
 
-1. Build from source code (Linux and Mac)
+- Download [go-ethereum](https://geth.ethereum.org/downloads)
+- [Source](https://geth.ethereum.org/docs/getting-started/installing-geth)
+
+
+1. Build from source code (Linux and Mac) 
     - The go-ethereum repository should be cloned locally. Then, the command make geth configures everything for a temporary build and cleans up afterwards. This method of building only works on UNIX-like operating systems, and a Go installation is still required.
         - `git clone https://github.com/ethereum/go-ethereum.git`
         - `cd go-ethereum`
@@ -87,15 +91,14 @@ lighthouse bn --network sepolia --execution-endpoint http://localhost:8551 --exe
     - These commands create a Geth executable file in `go-ethereum/build/bin` folder that can be moved and run from another directory if required
         >> The binary is standalone and doesn't require any additional files
 
-    - To update an existing Geth installation simply stop the node, navigate to the project root directory and pull the latest version from the Geth GitHub repository. then rebuild and restart the node
-        - `cd go-ethereum`
-        - `git pull`
-        - `make geth`
+2. To update an existing Geth installation simply stop the node, navigate to the project root directory and pull the latest version from the Geth GitHub repository. then rebuild and restart the node
+    - `cd go-ethereum`
+    - `git pull`
+    - `make geth`
 
 
 
-
-- Download [go-ethereum](https://geth.ethereum.org/downloads)
+- `echo '{"id": 1, "jsonrpc": "2.0", "method": "account_list"}' | nc -U ~/.clef/clef.ipc`
 
 - `/Users/eyal42/Work/Entrepreneurship/Ramzgate/Technical/Node/go-ethereum/sepolia-data/jwt.hex`
 - `export JWT_SECRET_PATH=/Users/eyal42/Work/Entrepreneurship/Ramzgate/Technical/Node/go-ethereum/sepolia-data/jwt.hex`
