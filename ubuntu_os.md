@@ -27,7 +27,7 @@ Instructions for setting up Beelink SEi, mini-PC desktop with Windows 10/11 into
 4. __Create a Bootable USB Drive__:
     - Insert USB flash drive into USB port on laptop
         - Preinstalled Window 10/11 will be erased during this process
-    - Download and install on laptop [__Etcher__](https://www.balena.io/etcher/) a USB drive bootable creation tool ([Rufus](https://rufus.ie/) an alternative)
+    - Download and install on laptop [__Etcher__](https://www.balena.io/etcher/) a USB drive bootable creation tool (see also [Rufus](https://rufus.ie/), [format SD](https://havecamerawilltravel.com/how-to-format-sd-card-on-mac/))
     - Open the bootable creation tool, select the downloaded Ubuntu ISO file from Step 1, and choose the USB drive you want to use for the installation
     - Click the "_Start_" or "_Create_" button to begin creating the bootable USB drive
 
@@ -60,6 +60,10 @@ Instructions for setting up Beelink SEi, mini-PC desktop with Windows 10/11 into
             - `rm -rf /usr/local/go`
         - Extract the archive you just downloaded into `/usr/local`, creating a fresh Go tree in `/usr/local/go`
             - `tar -C /usr/local -xzf go1.20.7.linux-amd64.tar.gz`
+        - Add `/usr/local/go/bin` to the `PATH` environment variable
+            - vi ~/.profile and add on the last line
+                - `export PATH=$PATH:/usr/locassl/go/bin`
+        - verify installation with `go version`
 
 8. __Install Brave Browser__:
     - `sudo curl -fsLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg`
