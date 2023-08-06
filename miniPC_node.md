@@ -1,14 +1,22 @@
-# Setting up ETH node on a Beelink SEi mini-PC
+# Setting up ETH node on mini-PC
 
 
-### Node Structure
+## Node Structure
 
 |                   |             |
 |-------------------|-------------|
-| Hardware         |   Beelink SEi miniPC |
+| Hardware         |   Beelink SEi mini-PC |
 |  OS              |   Ubuntu     |
-| consensus client |  Lighthouse |
+| consensus client |  lighthouse |
 | Execution client | go-ethereum |
 
 For instructions on seting up a miniPC machine see [setup](https://github.com/Ramzgate/node_setup/blob/main/miniPC_machine.md)
 
+
+## lighthouse setup
+
+## go-ethereum setup
+
+## clef setup
+
+## Launching a Node
