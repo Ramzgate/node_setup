@@ -17,7 +17,7 @@ For instructions on seting up a miniPC machine see [setup](https://github.com/Ra
 
 __Installing lighthouse client__:
 
-1. Instructions [Source](https://lighthouse-book.sigmaprime.io/installation-source.html)
+1. Instructions [source](https://lighthouse-book.sigmaprime.io/installation-source.html)
 2. Install Rust using rustup：
     - `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`
         - During installation, when prompted, enter 1 for the default installation
@@ -32,8 +32,6 @@ __Installing lighthouse client__:
     - `cd lighthouse`
     - `git checkout stable`
     - `make`
-
-
 
 ## go-ethereum setup
 
