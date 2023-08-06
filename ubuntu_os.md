@@ -2,7 +2,7 @@
 
 Instructions for setting up Beelink SEi, mini-PC desktop with Windows 10/11 into a Ubuntu box with a 2T SSD hard disk. 
 
-1. __Our of the box hardware__
+1. __Out of the box hardware__
 
     |  |  |
     |------------|---------------|
@@ -20,23 +20,23 @@ Instructions for setting up Beelink SEi, mini-PC desktop with Windows 10/11 into
         - find docking and insert SSD
 > Note the SSD needs to be mounted once Ubuntu is installed
 
-1. __Download Ubuntu ISO File__:
+3. __Download Ubuntu ISO File__:
     - Download the latest version of Ubuntu to laptop (MacBookPro) from the official Ubuntu [website](https://ubuntu.com/download).
         - Make select 64-bit system
 
-2. __Create a Bootable USB Drive__:
+4. __Create a Bootable USB Drive__:
     - Insert USB flash drive into USB port on laptop
         - Preinstalled Window 10/11 will be erased during this process
     - Download and install on laptop [__Etcher__](https://www.balena.io/etcher/) a USB drive bootable creation tool ([Rufus](https://rufus.ie/) an alternative)
     - Open the bootable creation tool, select the downloaded Ubuntu ISO file from Step 1, and choose the USB drive you want to use for the installation
     - Click the "_Start_" or "_Create_" button to begin creating the bootable USB drive
 
-3. __Set Up__ the BIOS/UEFI:
+5. __Set Up__ the BIOS/UEFI:
     - Restart your computer and access the BIOS/UEFI settings by pressing __ESC__ (could also use __Delete__, F2, F12 ) during startup.
     - In the BIOS/UEFI settings, change the boot order to prioritize the USB drive. 
         - This will ensure that the computer boots from the USB drive during startup.
 
-4. __Install Ubuntu__:
+6. __Install Ubuntu__:
     - Save the changes made to the BIOS/UEFI settings and exit. Your computer will now boot from the Ubuntu USB drive.
     - Select "Install Ubuntu" from the boot menu.
     - Follow the on-screen instructions to select your language, time zone, keyboard layout, and other preferences.
@@ -45,7 +45,16 @@ Instructions for setting up Beelink SEi, mini-PC desktop with Windows 10/11 into
     - Wait for the installation to complete. Once done, restart your computer.
     - Ubuntu will now boot up, and you can start using your newly installed Ubuntu operating system.
     
-6. __Mounting SSD hard disk__:
+7. __Install Unix Support__:
+    - `sudo apt install curl`
+    - `sudo apt update`
+
+8. __Install Browser__:
+    - `sudo curl -fsLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg`
+    - `sudo apt install brave-browser`
+    - launch by `/bin/brave-browser`
+
+9. __Mounting SSD hard disk__:
     - Boot up Ubuntu and open a cl (command line) terminal
     - Use  _`sudo lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL`_ to find SSD and mounting point (usually SSD appears as 'sda', 'sdb', 'sdc')
     - For a one time mount:
@@ -59,7 +68,7 @@ Instructions for setting up Beelink SEi, mini-PC desktop with Windows 10/11 into
     ```
     - verify mounting with `sudo lsblk -f`
 
-7. __Installing Anaconda__: ([source](https://www.makeuseof.com/install-anaconda-on-ubuntu/))
+10. __Installing Anaconda__: ([source](https://www.makeuseof.com/install-anaconda-on-ubuntu/))
     -  Update Linux system repositories: `sudo apt-get update`
     -  Upgrade the system packages: `sudo apt-get upgrade`
     - Install wget: `sudo apt-get install wget`
