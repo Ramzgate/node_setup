@@ -59,7 +59,7 @@ Instructions for setting up Beelink SEi, mini-PC desktop with Windows 10/11 into
     ```
     - verify mounting with `sudo lsblk -f`
 
-7. __Installing Anaconda__:
+7. __Installing Anaconda__: ([source](https://www.makeuseof.com/install-anaconda-on-ubuntu/))
     -  Update Linux system repositories: `sudo apt-get update`
     -  Upgrade the system packages: `sudo apt-get upgrade`
     - Install wget: `sudo apt-get install wget`
