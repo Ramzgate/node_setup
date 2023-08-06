@@ -49,7 +49,7 @@ Instructions for setting up Beelink SEi, mini-PC desktop with Windows 10/11 into
     - `sudo apt install curl`
     - `sudo apt update`
 
-8. __Install Browser__:
+8. __Install Brave Browser__:
     - `sudo curl -fsLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg`
     - `sudo apt install brave-browser`
     - launch by `/bin/brave-browser`
