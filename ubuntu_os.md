@@ -45,9 +45,21 @@ Instructions for setting up Beelink SEi, mini-PC desktop with Windows 10/11 into
     - Wait for the installation to complete. Once done, restart your computer.
     - Ubuntu will now boot up, and you can start using your newly installed Ubuntu operating system.
     
-7. __Install Unix Support__:
+7. __Install additional Unix cl apps__:
     - `sudo apt install curl`
     - `sudo apt update`
+    - `sudo apt install -y git gcc g++ make cmake pkg-config llvm-dev libclang-dev clang`
+
+8. __Install Rust and Go__:
+    - Rust
+        - `curl --proto '=https' --tlsv1.2 sSf https://sh.rustup.rs | sh`
+        - `source "$HOME/.cargo/env`
+    - Go
+        - Download from [go.dev](https://go.dev/dl/)
+        - Remove any previous Go installation by deleting the `/usr/local/go` folder 
+            - `rm -rf /usr/local/go`
+        - Extract the archive you just downloaded into `/usr/local`, creating a fresh Go tree in `/usr/local/go`
+            - `tar -C /usr/local -xzf go1.20.7.linux-amd64.tar.gz`
 
 8. __Install Brave Browser__:
     - `sudo curl -fsLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg`
