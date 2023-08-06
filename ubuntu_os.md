@@ -64,10 +64,17 @@ Instructions for setting up Beelink SEi, mini-PC desktop with Windows 10/11 into
     -  __Upgrade__ the system packages: `sudo apt-get upgrade`
     - __Install__ wget: `sudo apt-get install wget`
     - __Go to /tmp__: `cd /tmp`
-    - __Download the package__ :`wget https://repo.anaconda.com/archive/Anaconda3-2022.05-Linux-x86_64.sh`
+    - __Download the package__ :
+        - `wget https://repo.anaconda.com/archive/Anaconda3-2022.05-Linux-x86_64.sh`
+        - `wget https://repo.anaconda.com/archive/Anaconda3-2023.07-2-Linux-x86_64.sh`
     -  __Verify hash code integrity__
-        - compute: `sha256sum Anaconda3-2022.05-Linux-x86_64.sh`
-        - must match the code in `https://repo.anaconda.com/archive/`
+        - compute: 
+            - `sha256sum Anaconda3-2022.05-Linux-x86_64.sh`
+            - `sha256sum Anaconda3-2023.07-2-Linux-x86_64.sh`
+        - verfy match with code on Official Anaconda [webpage](`https://repo.anaconda.com/archive/`)
+    - __Run the Anaconda Bash shell script__:
+        - `bash Anaconda3-2022.05-Linux-x86_64.sh`
+        - `bash Anaconda3-2023.07-2-Linux-x86_64.sh`
 
 
 ```mermaid
