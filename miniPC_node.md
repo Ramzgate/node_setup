@@ -26,7 +26,12 @@ __Installing lighthouse client__:
             - append `source $HOME/.cargo/env to ~/.bashrc`
 3. Install dependencies 
     - `sudo apt install -y git gcc g++ make cmake pkg-config llvm-dev libclang-dev clang`
-4. `git clone https://github.com/sigp/lighthouse.git`
+4. Download source:
+    - `git clone https://github.com/sigp/lighthouse.git`
+5. Build from source:
+    - `cd lighthouse`
+    - `git checkout stable`
+    - `make`
 
 
 
