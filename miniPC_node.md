@@ -40,7 +40,8 @@ __Running a lighthouse client__:
     - create a JWT secret file which will be used in later steps
         - `sudo mkdir -p /secrets`
         - `openssl rand -hex 32 | tr -d "\n" | sudo tee /secrets/jwt.hex`
-2. Step 3: Set up a beacon node using Lighthouse
+
+2. Launch a beacon node using Lighthouse
 
     Use the following command to start a non-staking beacon nod:
 
@@ -53,6 +54,22 @@ __Running a lighthouse client__:
     --disable-deposit-contract-sync
     ```
 
+3. Notable flags:
+- --network flag, which selects a network:
+    - lighthouse (no flag): Mainnet
+    - lighthouse --network mainnet: Mainnet
+    - lighthouse --network goerli: Goerli (testnet)
+    - lighthouse --network sepolia: Sepolia (testnet)
+    - lighthouse --network gnosis: Gnosis chain
+
+    >Note: Using the correct --network flag is very important; using the wrong flag can result in penalties, slashings or lost deposits. As a rule of thumb, always provide a --network flag instead of relying on the default
+
+    - `--execution-endpoint`: the URL of the execution engine API
+        - If the execution engine is running on the same computer with the default port, this will be `http://localhost:8551`
+    - `--execution-jwt`: the path to the JWT secret file shared by Lighthouse and the execution engine. This is a mandatory form of authentication which ensures that Lighthouse has the authority to control the execution engine
+    - `--checkpoint-sync-url`: Lighthouse supports fast sync from a recent finalized checkpoint. Checkpoint sync is optional; however, we highly recommend it since it is substantially faster than syncing from genesis while still providing the same functionality. The checkpoint sync is done using public endpoints provided by the Ethereum community. For example, in the above command, we use the URL for Sigma Prime's checkpoint sync server for mainnet `https://mainnet.checkpoint.sigp.io`
+    - `--http`: to expose an HTTP server of the beacon chain. The default listening address is `http://localhost:5052`
+        - The HTTP API is required for the beacon node to accept connections from the validator client, which manages keys
 
 ## go-ethereum setup
 
