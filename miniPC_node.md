@@ -78,6 +78,15 @@ lighthouse bn --network sepolia --execution-endpoint http://localhost:8551 --exe
 
 ## go-ethereum setup
 
+- `/Users/eyal42/Work/Entrepreneurship/Ramzgate/Technical/Node/go-ethereum/sepolia-data/jwt.hex`
+- `export JWT_SECRET_PATH=/Users/eyal42/Work/Entrepreneurship/Ramzgate/Technical/Node/go-ethereum/sepolia-data/jwt.hex`
+
+- `openssl rand -hex 32`
+- `openssl rand -hex 32`
+
+```
+build/bin/geth --sepolia --datadir sepolia-data --authrpc.addr localhost --authrpc.port 8551 --authrpc.vhosts localhost --authrpc.jwtsecret $JWT_SECRET_PATH --http --http.api eth,net,txpool --signer=sepolia-data/clef/clef.ipc --http --http.port 8545
+```
 
 ## clef setup
 
