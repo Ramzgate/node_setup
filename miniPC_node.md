@@ -15,7 +15,34 @@ For instructions on seting up a miniPC machine see [setup](https://github.com/Ra
 
 ## clef setup
 
-1. 
+1. __Data directory setup__
+    - Create a data directory `mkdir sepolia-data` (_sepolia-data_, _mainnet_data_, or just _data_)
+    - Go to directory `cd sepolia-data`
+    - Create subdirectories for different keys:
+        - `mkdir clef`
+        - `mkdir keystore`
+        - `mkdir jwt_secret`
+    - Export paths to subdirectories as encironment varaibles:
+        - `export CLEF_PATH=<path to .../clef>`
+        - `export KEYSTORE_PATH=<path to .../keystore>`
+        - `export JWT_PATH=<path to .../jwt_secret>`
+
+2. __Create a JWT secret file__
+    - A JWT secret file is used to secure the communication between the execution client and the consensus client
+    - create a JWT secret file which will be used in later steps
+        - `openssl rand -hex 32 | tr -d "\n" | sudo tee $JWT_PATH/jwt.hex`
+
+3. __Initialize clef__
+    - `go-ethereum/build/bin/clef init`
+    - copy `masterseed.json` to `...clef/`
+        - `cp <path and file given on init> .../clef/.`
+4. __New account__
+    - `go-ethereum/build/bin/clef newaccount --keystore $KEYSTORE_PATH`
+
+5. __Launch clef in proper chain__
+    - `go-ethereum/build/bin/clef --keystore $KEYSTORE_PATH --configdir $CLEF_PATH --chainid <chain id>`
+        - mainet chainid - 1
+        - sepolia chainid - 11155111
 
 ## lighthouse setup
 
@@ -38,12 +65,6 @@ For instructions on seting up a miniPC machine see [setup](https://github.com/Ra
     - `make`
 
 ### Running a lighthouse client
-
-1. __Create a JWT secret file__
-    - A JWT secret file is used to secure the communication between the execution client and the consensus client
-    - create a JWT secret file which will be used in later steps
-        - `sudo mkdir -p /secrets`
-        - `openssl rand -hex 32 | tr -d "\n" | sudo tee /secrets/jwt.hex`
 
 2. __Launch a beacon node using Lighthouse__
 
@@ -82,9 +103,8 @@ lighthouse bn --network sepolia --execution-endpoint http://localhost:8551 --exe
 
 ## go-ethereum setup
 
-- Download [go-ethereum](https://geth.ethereum.org/downloads)
-- [Source](https://geth.ethereum.org/docs/getting-started/installing-geth)
-
+- Download source code from [go-ethereum](https://geth.ethereum.org/downloads)
+- Instructions below are based on [this](https://geth.ethereum.org/docs/getting-started/installing-geth) webpage
 
 1. Build from source code (Linux and Mac) 
     - The go-ethereum repository should be cloned locally. Then, the command make geth configures everything for a temporary build and cleans up afterwards. This method of building only works on UNIX-like operating systems, and a Go installation is still required.
