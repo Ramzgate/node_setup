@@ -14,7 +14,7 @@ Instructions for setting up a Raspberry Pi 4B with Ubuntu.
     | WiFi  | 802.11 | 
     | connectors | 2*USB 3.0 ; 2*USB 2.0| 
 
-2. __Hardware Upgrades__ 
+2. __Hardware Upgrades__ (for only one of the machines)
     - Samsung 870 EVO, 2TB SSD
         - put SSD in hardcase
         - connect externally via USB 3.0 port
