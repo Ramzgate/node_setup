@@ -12,6 +12,7 @@
 
 For instructions on seting up a miniPC machine see [setup](https://github.com/Ramzgate/node_setup/blob/main/miniPC_machine.md)
 
+---------------------------
 
 ## clef setup
 
