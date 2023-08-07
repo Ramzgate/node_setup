@@ -24,6 +24,7 @@ For instructions on seting up a miniPC machine see [setup](https://github.com/Ra
         - `mkdir keystore`
         - `mkdir jwt_secret`
     - Export paths to subdirectories as encironment varaibles:
+        - `export DATA_PATH=<path to .../sepolia-data>`
         - `export CLEF_PATH=<path to .../clef>`
         - `export KEYSTORE_PATH=<path to .../keystore>`
         - `export JWT_PATH=<path to .../jwt_secret>`
@@ -42,8 +43,8 @@ For instructions on seting up a miniPC machine see [setup](https://github.com/Ra
 
 5. __Launch clef in proper chain__
     - `go-ethereum/build/bin/clef --keystore $KEYSTORE_PATH --configdir $CLEF_PATH --chainid <chain id>`
-        - mainet chainid - 1
-        - sepolia chainid - 11155111
+        - _mainet_ chainid - 1
+        - _sepolia_ chainid - 11155111
 
 ## lighthouse setup
 
