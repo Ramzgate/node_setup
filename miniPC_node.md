@@ -13,6 +13,10 @@
 For instructions on seting up a miniPC machine see [setup](https://github.com/Ramzgate/node_setup/blob/main/miniPC_machine.md)
 
 
+## clef setup
+
+1. 
+
 ## lighthouse setup
 
 ### Installing a lighthouse client
@@ -87,7 +91,8 @@ lighthouse bn --network sepolia --execution-endpoint http://localhost:8551 --exe
         - `git clone https://github.com/ethereum/go-ethereum.git`
         - `cd go-ethereum`
         - `make geth`
-
+        - `make all` - generates `geth`, `clef`, `devp2p`, `abidump`, `abigen`, `bootnode`,\
+         `ethkey`, `evm`, `faucet`, `p2psim`, `rlpdump`
     - These commands create a Geth executable file in `go-ethereum/build/bin` folder that can be moved and run from another directory if required
         >> The binary is standalone and doesn't require any additional files
 
@@ -109,8 +114,6 @@ lighthouse bn --network sepolia --execution-endpoint http://localhost:8551 --exe
 ```
 build/bin/geth --sepolia --datadir sepolia-data --authrpc.addr localhost --authrpc.port 8551 --authrpc.vhosts localhost --authrpc.jwtsecret $JWT_SECRET_PATH --http --http.api eth,net,txpool --signer=sepolia-data/clef/clef.ipc --http --http.port 8545
 ```
-
-## clef setup
 
 ## Launching a Node
 
