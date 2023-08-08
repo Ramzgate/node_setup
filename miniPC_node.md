@@ -37,8 +37,8 @@ For instructions on seting up a miniPC machine see [setup](https://github.com/Ra
         echo "CLEF_FILE="$CLEF_FILE
         echo "KEYSTORE_PATH="$KEYSTORE_PATH
         echo "JWT_SECRET="$JWT_SECRET
-
         ```
+        
     - `source sepolia-env-setup.sh`
 
 2. __Create a JWT secret file__
