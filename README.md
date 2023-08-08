@@ -8,3 +8,9 @@
     - setting up [Raspberry-Pi Ubuntu](https://github.com/Ramzgate/node_setup/blob/main/raspberry_pi_machine.md) machines
 4. [MacOS](https://github.com/Ramzgate/node_setup/blob/main/MacOS_node) node
 
+<!--- 
+git remote add node_setup https://github.com/Ramzgate/node_setup.git
+git add .  
+git commit -m "lighthouse install instructions"
+git push -u node_setup main 
+ -->

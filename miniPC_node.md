@@ -23,11 +23,23 @@ For instructions on seting up a miniPC machine see [setup](https://github.com/Ra
         - `mkdir clef`
         - `mkdir keystore`
         - `mkdir jwt_secret`
-    - Export paths to subdirectories as encironment varaibles:
-        - `export DATA_PATH=<path to .../sepolia-data>`
-        - `export CLEF_PATH=<path to .../clef>`
-        - `export KEYSTORE_PATH=<path to .../keystore>`
-        - `export JWT_PATH=<path to .../jwt_secret>`
+    - Create file _sepolia-env-setup.sh_ with: 
+        ```
+        export DATA_PATH=<path to .../sepolia-data>
+        export CLEF_PATH=$DATA_PATH/clef
+        export KEYSTORE_PATH=$DATA_PATH/keystore
+        export JWT_PATH=$DATA_PATH/jwt_secret
+
+        export CLEF_FILE=$CLEF_PATH/clef.ipc
+        export JWT_SECRET=$JWT_PATH/jwt.hex
+
+        echo "DATA_PATH="$DATA_PATH
+        echo "CLEF_FILE="$CLEF_FILE
+        echo "KEYSTORE_PATH="$KEYSTORE_PATH
+        echo "JWT_SECRET="$JWT_SECRET
+
+        ```
+    - `source sepolia-env-setup.sh`
 
 2. __Create a JWT secret file__
     - A JWT secret file is used to secure the communication between the execution client and the consensus client
@@ -42,9 +54,12 @@ For instructions on seting up a miniPC machine see [setup](https://github.com/Ra
     - `go-ethereum/build/bin/clef newaccount --keystore $KEYSTORE_PATH`
 
 5. __Launch clef in proper chain__
-    - `go-ethereum/build/bin/clef --keystore $KEYSTORE_PATH --configdir $CLEF_PATH --chainid <chain id>`
-        - _mainet_ chainid - 1
-        - _sepolia_ chainid - 11155111
+```
+go-ethereum/build/bin/clef --keystore $KEYSTORE_PATH --configdir $CLEF_PATH --chainid <chain id>
+```
+ - _chainid_ flag:
+     - _mainet_ - 1
+    - _sepolia_ - 11155111
 
 ## lighthouse setup
 
@@ -100,7 +115,7 @@ For instructions on seting up a miniPC machine see [setup](https://github.com/Ra
 
 4. __Example__
 ```
-lighthouse bn --network sepolia --execution-endpoint http://localhost:8551 --execution-jwt $JWT_SECRET_PATH --checkpoint-sync-url https://sepolia.checkpoint-sync.ethpandaops.io --disable-deposit-contract-sync --http
+lighthouse bn --network sepolia --execution-endpoint http://localhost:8551 --execution-jwt $JWT_SECRET --checkpoint-sync-url https://sepolia.checkpoint-sync.ethpandaops.io --disable-deposit-contract-sync --http
 ```
 
 ## go-ethereum setup
@@ -134,7 +149,7 @@ lighthouse bn --network sepolia --execution-endpoint http://localhost:8551 --exe
 - `openssl rand -hex 32`
 
 ```
-build/bin/geth --sepolia --datadir sepolia-data --authrpc.addr localhost --authrpc.port 8551 --authrpc.vhosts localhost --authrpc.jwtsecret $JWT_SECRET_PATH --http --http.api eth,net,txpool --signer=sepolia-data/clef/clef.ipc --http --http.port 8545
+build/bin/geth --sepolia --datadir sepolia-data --authrpc.addr localhost --authrpc.port 8551 --authrpc.vhosts localhost --authrpc.jwtsecret $JWT_SECRET --http --http.api eth,net,txpool --signer=$CLEF_FILE --http --http.port 8545
 ```
 
 ## Launching a Node
