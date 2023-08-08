@@ -112,3 +112,18 @@ Instructions for setting up Beelink SEi, mini-PC desktop with Windows 10/11 into
     - Update and upgrade
         - `conda update conda`
         - `conda update anaconda`
+
+11. __SSH__:
+    -  Client
+        - Install SSH client
+            - `sudo apt install openssh-client`
+        - Geenrate RSA key pair -
+            - `ssh-keygen -t rsa`
+            - `ssh-keygen -t rsa -b 4096`
+            - `ssh-copy-id eyal@Baal`
+    - Server
+        - Install SSH server
+            - `sudo apt install openssh-server`
+        - Add user
+            - above adds private key to ~/.ssh/authorized_keys
+    
