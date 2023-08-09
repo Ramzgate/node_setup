@@ -74,7 +74,7 @@ Instructions for setting up Beelink SEi, mini-PC desktop with Windows 10/11 into
     - Boot up Ubuntu and open a cl (command line) terminal
     - Use  _`sudo lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL`_ to find SSD and mounting point (usually SSD appears as 'sda', 'sdb', 'sdc')
     - For a one time mount:
-        - creat directory for mounting point `mkdir /mnt/ssd`
+        - create directory for mounting point `mkdir /mnt/ssd`
         - mount SSD `sudo mount /dev/sda /mnt/ssd`
         - for any change in mounting point 
             - to unmount `sudo umount /mnt/ssd`
@@ -102,7 +102,7 @@ Instructions for setting up Beelink SEi, mini-PC desktop with Windows 10/11 into
         - compute:
             - `sha256sum Anaconda3-2022.05-Linux-x86_64.sh`
             - `sha256sum Anaconda3-2023.07-2-Linux-x86_64.sh`
-        - verfy match with code on Official Anaconda [webpage](`https://repo.anaconda.com/archive/`)
+        - verify match with code on Official Anaconda [webpage](`https://repo.anaconda.com/archive/`)
     - Run the Anaconda Bash shell script:
         - `bash Anaconda3-2022.05-Linux-x86_64.sh`
         - `bash Anaconda3-2023.07-2-Linux-x86_64.sh`
@@ -117,7 +117,7 @@ Instructions for setting up Beelink SEi, mini-PC desktop with Windows 10/11 into
     -  Client
         - Install SSH client
             - `sudo apt install openssh-client`
-        - Geenrate RSA key pair -
+        - Generate RSA key pair -
             - `ssh-keygen -t rsa`
             - `ssh-keygen -t rsa -b 4096`
             - `ssh-copy-id <user>@<remote server>`

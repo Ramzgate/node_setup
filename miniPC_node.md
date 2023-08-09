@@ -10,7 +10,7 @@
 | consensus client |  lighthouse | Rust |
 | Execution client | go-ethereum | Go   |
 
-For instructions on seting up a miniPC machine see [setup](https://github.com/Ramzgate/node_setup/blob/main/miniPC_machine.md)
+For instructions on setting up a miniPC machine see [setup](https://github.com/Ramzgate/node_setup/blob/main/miniPC_machine.md)
 
 ---------------------------
 

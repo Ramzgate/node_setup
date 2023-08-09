@@ -3,7 +3,7 @@
 [Start Here](https://ethereum.org/en/developers/tutorials/run-node-raspberry-pi/)
 
 ## Dual Machines
-The Raspverry Pi 4B the most advanced Raspberry Pi to date has 8G RAM and performance that falls a bit short of what would required to run a full node, therefore we opt to run the consensus client and the execution clients on seperate machines connected via Ethernet 
+The Raspberry Pi 4B the most advanced Raspberry Pi to date has 8G RAM and performance that falls a bit short of what would required to run a full node, therefore we opt to run the consensus client and the execution clients on separate machines connected via Ethernet 
 
 ## Node Structure
 
@@ -14,7 +14,7 @@ The Raspverry Pi 4B the most advanced Raspberry Pi to date has 8G RAM and perfor
 | consensus client |  lighthouse | Rust |
 | Execution client | go-ethereum | Go   |
 
-For instructions on seting up Raspberry Pi machines see [setup](https://github.com/Ramzgate/node_setup/blob/main/raspberry_pi_machine.md)
+For instructions on setting up Raspberry Pi machines see [setup](https://github.com/Ramzgate/node_setup/blob/main/raspberry_pi_machine.md)
 
 
 ---------------------------
