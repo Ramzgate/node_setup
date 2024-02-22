@@ -110,6 +110,7 @@ go-ethereum/build/bin/clef --keystore $KEYSTORE_PATH --configdir $CLEF_PATH --ch
         - If the execution engine is running on the same computer with the default port, this will be `http://localhost:8551`
     - `--execution-jwt`: the path to the JWT secret file shared by Lighthouse and the execution engine. This is a mandatory form of authentication which ensures that Lighthouse has the authority to control the execution engine
     - `--checkpoint-sync-url`: Lighthouse supports fast sync from a recent finalized checkpoint. Checkpoint sync is optional; however, we highly recommend it since it is substantially faster than syncing from genesis while still providing the same functionality. The checkpoint sync is done using public endpoints provided by the Ethereum community. For example, in the above command, we use the URL for Sigma Prime's checkpoint sync server for mainnet `https://mainnet.checkpoint.sigp.io`
+Additional checkpoint sync servers can be found at `https://eth-clients.github.io/checkpoint-sync-endpoints/`
     - `--http`: to expose an HTTP server of the beacon chain. The default listening address is `http://localhost:5052`
         - The HTTP API is required for the beacon node to accept connections from the validator client, which manages keys
 
