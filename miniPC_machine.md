@@ -71,11 +71,11 @@ Instructions for setting up Beelink SEi, mini-PC desktop with Windows 10/11 into
     - launch by `/bin/brave-browser`
 
 9. __Mounting SSD hard disk__:
-    - An second ssd disk might need to formated, to format a disk do the following
-          - Go to application, and chose utilities, in utilities choose 'Disks'
-          - click on the disk you would like to format and then on the cog whel icon for _'additional partition options'_
-          - choose _'Format Partition'_
-          use the UUID provided for mounting the disk
+    - A second ssd disk might need to formated, to format a disk do the following
+        - Go to application, and chose utilities, in utilities choose 'Disks'
+        - click on the disk you would like to format and then on the cog whel icon for _'additional partition options'_
+        - choose _'Format Partition'_
+        - use the UUID provided for mounting the disk
     - Boot up Ubuntu and open a cl (command line) terminal
     - Use  _`sudo lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL`_ to find SSD and mounting point (usually SSD appears as 'sda', 'sdb', 'sdc')
     - For a one time mount:
